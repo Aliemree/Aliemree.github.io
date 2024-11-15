@@ -1,0 +1,111 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/backgroundanasayfa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+
+.profil-resmi img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.ana-baslik {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.paragraf {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 600px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.daha-fazla-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.daha-fazla-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+.gizli-yazi {
+    display: block; 
+    max-height: 0; 
+    overflow: hidden;
+    opacity: 0; 
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+}
+
+.gizli-yazi.active {
+    max-height: 300px; 
+    opacity: 1; 
+}
+
+.buton-alani {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+/* Butonlar */
+.buton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    margin: 0 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Belirli Buton Renkleri */
+.buton.renk-sari {
+    background-color: #FFD700;
+}
+
+.buton.renk-yesil {
+    background-color: #4CAF50;
+}
+
+.buton.renk-kirmizi {
+    background-color: #FF4500;
+}
+
+.buton.renk-mavi {
+    background-color: #1E90FF;
+}
+
+/* Hover Efekti */
+.buton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}

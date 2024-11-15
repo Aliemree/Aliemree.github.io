@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim - Ali Emre</title>
+    <link rel="stylesheet" href="../css/projelerim.css">
+</head>
+<body>
+    <!-- Üst Menü -->
+    <header>
+        <div class="button-section">
+            <a href="index.html" class="button yellow">Ana Sayfa</a>
+            <a href="hakkimda.html" class="button green">Hakkımda</a>
+            <a href="projelerim.html" class="button red">Projelerim</a>
+            <a href="iletisim.html" class="button blue">İletişim</a>
+        </div>
+    </header>
+    <div class="projects-container">
+        <h1>Projelerim</h1>
+        <p>Veri analitiği ve web geliştirme üzerine yaptığım projeleri keşfedin.</p>
+        <div class="filter-section">
+            <button class="filter-btn" data-filter="recent">En Son Projeler</button>
+            <button class="filter-btn" data-filter="popular">En Beğenilen Projeler</button>
+            <button class="filter-btn" data-filter="all">Tüm Projeler</button>
+        </div>
+        <div class="projects-list">
+            <div class="project-item" data-category="all">
+                <img src="../images/project1.jpg" alt="Proje 1">
+                <h3>Proje 1</h3>
+                <p>Proje 1 açıklaması: Web geliştirme üzerine bir proje.</p>
+            </div>
+            <div class="project-item" data-category="popular">
+                <img src="../images/project2.jpg" alt="Proje 2">
+                <h3>Proje 2</h3>
+                <p>Proje 2 açıklaması: Veri analitiği ve raporlama üzerine bir proje.</p>
+            </div>
+            <div class="project-item" data-category="recent">
+                <img src="../images/project3.jpg" alt="Proje 3">
+                <h3>Proje 3</h3>
+                <p>Proje 3 açıklaması: Yapay zeka destekli bir proje.</p>
+            </div>
+
+            <div class="project-item" data-category="recent">
+                <img src="../images/project4.jpg" alt="Proje 3">
+                <h3>Proje 4</h3>
+                <p>Proje 4 açıklaması: E-Gezi Platformu.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ali Emre. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- JS Dosyası -->
+    <script src="../js/projelerim.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Ali Emre</title>
+    <link rel="stylesheet" href="../css/ortak.css">
+    <link rel="stylesheet" href="../css/iletisim.css">
+</head>
+<body>
+    <header>
+         <!-- Üst Menü -->
+        <div class="button-section">
+            <a href="index.html" class="button yellow">Ana Sayfa</a>
+            <a href="hakkimda.html" class="button green">Hakkımda</a>
+            <a href="projelerim.html" class="button red">Projelerim</a>
+            <a href="iletisim.html" class="button blue">İletişim</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h1>İletişim</h1>
+        <p>Bize ulaşmak için aşağıdaki formu doldurun.</p>
+        <form id="contact-form">
+            <label for="name">İsim:</label>
+            <input type="text" id="name" name="name" placeholder="İsminizi girin" required>
+            
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" placeholder="E-postanızı girin" required>
+            
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
+            
+            <button type="submit" class="submit-btn">Gönder</button>
+        </form>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+</html>

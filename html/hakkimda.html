@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımda - Öğrenci</title>
+    <link rel="stylesheet" href="../css/hakkimda.css">
+</head>
+<body>
+    <!-- Üst Menü -->
+    <header>
+        <div class="buton-alani">
+            <a href="index.html" class="buton renk-sari">Ana Sayfa</a>
+            <a href="hakkimda.html" class="buton renk-yesil">Hakkımda</a>
+            <a href="projelerim.html" class="buton renk-kirmizi">Projelerim</a>
+            <a href="iletisim.html" class="buton renk-mavi">İletişim</a>
+        </div>
+    </header>
+
+    <!-- Hakkımda İçeriği -->
+    <div class="profil-resmi">
+        <img src="../images/men6.webp" alt="Profil Resmi">
+    </div>
+    <div class="about-container">
+        <h1 class="ana-baslik">Hakkımda</h1>
+        <p class="paragraf">
+            Ben bir bilgisayar mühendisliği öğrencisiyim. Teknolojiye olan ilgim, yazılım geliştirme, yapay zeka, veri analitiği ve doğal dil işleme gibi alanlarda kendimi geliştirmeme yön veriyor.
+        </p>
+        <p class="gizli-yazi">
+            Yazılım geliştirme süreçlerine aktif olarak katılıyor, çeşitli projeler üretiyorum. Örneğin, 'PublicTransportationScheduler' projesiyle yapay zeka tabanlı toplu taşıma optimizasyonu üzerinde çalışıyorum. Bunun yanında 'Security Scan' gibi projelerde görüntü işleme ve nesne tanıma teknolojilerini kullanarak güvenliği artırmayı hedefliyorum. Boş zamanlarımda elektromanyetik radyasyonun malzemeler üzerindeki etkileri gibi daha teknik konulara odaklanıyor, biyomimetik tasarımlar üzerine araştırmalar yapıyorum.
+            <br><br>
+            GitHub'da açık kaynak projelere katkıda bulunuyorum ve Hugging Face topluluğunda 'WhiteAngelss' kullanıcı adıyla aktif bir üyeyim. Ayrıca SAYZEK Datathon 2024 gibi yarışmalara katılarak veri bilimi ve yapay zeka becerilerimi sergiledim.
+            <br><br>
+            Eğitim hayatım boyunca algoritmalar, veri yapıları ve sistem tasarımı üzerine yoğunlaşarak kendimi teknik alanda güçlendirdim. Gelecekte, yapay zeka ve veri analitiği üzerine yenilikçi çözümler geliştirmeyi ve bu alanda kalıcı bir etki bırakmayı hedefliyorum.
+        </p>
+        <button class="daha-fazla-btn" onclick="toggleGizliYazi()">Daha Fazla Gör</button>
+    </div>
+    <footer>
+        <p>&copy;  2024 Ali Emre. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script>
+        function toggleGizliYazi() {
+            const gizliYazi = document.querySelector('.gizli-yazi');
+            gizliYazi.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
