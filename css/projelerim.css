@@ -1,14 +1,12 @@
-
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('../images/projelerimback.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     color: #ffffff;
-    text-align: center;
 }
 
 /* Üst Menü */
@@ -75,72 +73,271 @@ p {
     color: #ffffff;
 }
 
-/* Projeler Listesi */
-.projects-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin: 20px auto;
+.projects-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
-/* Proje Kartı */
-.project-item {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
+.projects-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #FF4500;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.projects-container > p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.filter-btn:hover {
+    background-color: rgba(255, 69, 0, 0.6);
+    transform: translateY(-3px);
+}
+
+.filter-btn.active {
+    background-color: #FF4500;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project-item img {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-item:hover img {
+    transform: scale(1.05);
 }
 
 .project-item h3 {
-    font-size: 1.8em;
-    margin: 10px 0;
-    color: #FFA500;
+    font-size: 1.3em;
+    margin: 15px 15px 10px;
+    color: #FF4500;
 }
 
 .project-item p {
-    font-size: 1em;
+    padding: 0 15px 15px;
+    margin: 0;
+    font-size: 0.95em;
+    color: #d9d9d9;
+    line-height: 1.5;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay h3 {
+    font-size: 1.4em;
+    margin: 0 0 15px 0;
+    color: #FF4500;
+    text-align: center;
+}
+
+.project-overlay p {
+    font-size: 0.95em;
     line-height: 1.6;
-    color: #ddd;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-.project-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+.project-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0 15px 0;
 }
 
-/* Filtre Butonları */
-.filter-section {
-    margin: 20px auto;
+.tech-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: rgba(255, 69, 0, 0.2);
+    border-radius: 20px;
+    font-size: 0.85em;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tech-tag:hover {
+    background-color: rgba(255, 69, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.project-date {
+    font-size: 0.9em;
+    color: #FF4500;
+    margin: 0 0 15px 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.project-links {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: auto;
 }
 
-.filter-btn {
-    padding: 12px 25px;
-    font-size: 1em;
-    background-color: #2E8B57;
+.project-link {
+    padding: 8px 15px;
+    background-color: #FF4500;
     color: white;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95em;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
 }
 
-.filter-btn:hover {
-    background-color: #3CB371;
+.project-link i {
+    margin-right: 5px;
+}
+
+.project-link:hover {
+    background-color: #ff6a33;
     transform: scale(1.05);
+}
+
+/* Category badge */
+.category-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF4500;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific category colors */
+.project-item[data-category*="tubitak"] .category-badge {
+    background-color: #4169E1; /* Royal Blue */
+}
+
+.project-item[data-category*="teknofest"] .category-badge {
+    background-color: #FF4500; /* Orange Red */
+}
+
+.project-item[data-category*="personal"] .category-badge {
+    background-color: #32CD32; /* Lime Green */
+}
+
+.project-item[data-category*="current"] .category-badge::after {
+    content: " ★";
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .filter-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 80%;
+        margin-bottom: 8px;
+    }
+    
+    .project-overlay {
+        padding: 15px;
+    }
+    
+    .project-overlay h3 {
+        font-size: 1.2em;
+    }
+    
+    .project-overlay p {
+        font-size: 0.9em;
+    }
+    
+    .tech-tag {
+        font-size: 0.75em;
+        padding: 4px 10px;
+    }
 }

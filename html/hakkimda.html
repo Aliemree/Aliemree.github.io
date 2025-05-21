@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımda - Öğrenci</title>
+    <title>Hakkımda - Ali Emre</title>
+    <link rel="stylesheet" href="../css/ortak.css">
     <link rel="stylesheet" href="../css/hakkimda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Üst Menü -->
     <header>
-        <div class="buton-alani">
-            <a href="index.html" class="buton renk-sari">Ana Sayfa</a>
-            <a href="hakkimda.html" class="buton renk-yesil">Hakkımda</a>
-            <a href="projelerim.html" class="buton renk-kirmizi">Projelerim</a>
-            <a href="iletisim.html" class="buton renk-mavi">İletişim</a>
+        <div class="button-section">
+            <a href="index.html" class="button yellow">Ana Sayfa</a>
+            <a href="hakkimda.html" class="button green">Hakkımda</a>
+            <a href="projelerim.html" class="button red">Projelerim</a>
+            <a href="iletisim.html" class="button blue">İletişim</a>
         </div>
     </header>
 
@@ -21,29 +23,158 @@
     <div class="profil-resmi">
         <img src="../images/men6.webp" alt="Profil Resmi">
     </div>
+    
     <div class="about-container">
         <h1 class="ana-baslik">Hakkımda</h1>
-        <p class="paragraf">
-            Ben bir bilgisayar mühendisliği öğrencisiyim. Teknolojiye olan ilgim, yazılım geliştirme, yapay zeka, veri analitiği ve doğal dil işleme gibi alanlarda kendimi geliştirmeme yön veriyor.
-        </p>
-        <p class="gizli-yazi">
-            Yazılım geliştirme süreçlerine aktif olarak katılıyor, çeşitli projeler üretiyorum. Örneğin, 'PublicTransportationScheduler' projesiyle yapay zeka tabanlı toplu taşıma optimizasyonu üzerinde çalışıyorum. Bunun yanında 'Security Scan' gibi projelerde görüntü işleme ve nesne tanıma teknolojilerini kullanarak güvenliği artırmayı hedefliyorum. Boş zamanlarımda elektromanyetik radyasyonun malzemeler üzerindeki etkileri gibi daha teknik konulara odaklanıyor, biyomimetik tasarımlar üzerine araştırmalar yapıyorum.
-            <br><br>
-            GitHub'da açık kaynak projelere katkıda bulunuyorum ve Hugging Face topluluğunda 'WhiteAngelss' kullanıcı adıyla aktif bir üyeyim. Ayrıca SAYZEK Datathon 2024 gibi yarışmalara katılarak veri bilimi ve yapay zeka becerilerimi sergiledim.
-            <br><br>
-            Eğitim hayatım boyunca algoritmalar, veri yapıları ve sistem tasarımı üzerine yoğunlaşarak kendimi teknik alanda güçlendirdim. Gelecekte, yapay zeka ve veri analitiği üzerine yenilikçi çözümler geliştirmeyi ve bu alanda kalıcı bir etki bırakmayı hedefliyorum.
-        </p>
-        <button class="daha-fazla-btn" onclick="toggleGizliYazi()">Daha Fazla Gör</button>
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> 0507 027 11 69 | <i class="fas fa-envelope"></i> ali.emree.tr@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Gaziantep, Rize</p>
+            <div class="social-links">
+                <a href="https://github.com/" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://linkedin.com/" class="social-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="#" class="social-link"><i class="fas fa-globe"></i> Kişisel Web</a>
+            </div>
+        </div>
+        
+        <div class="about-summary">
+            <p class="paragraf">
+                Gömülü sistemler, yapay zekâ ve yazılım alanlarına ilgi duyan bir 3. sınıf bilgisayar mühendisliği öğrencisiyim. TÜBİTAK ve TEKNOFEST projelerinde birçok takıma liderlik yaparak yenilikçi çözümler geliştirdim.
+            </p>
+            <p class="hidden-text">
+                Makine öğrenimi, doğal dil işleme ve otonom sistemler üzerine uygulamalı projeler üretiyor; araştırma ve açık kaynak katkılarıyla teknik ve toplumsal değeri yüksek sistemler geliştirmeyi hedefliyorum.
+                <br><br>
+                Yazılım geliştirme süreçlerine aktif olarak katılıyor, çeşitli projeler üretiyorum. 'PublicTransportationScheduler' projesiyle yapay zeka tabanlı toplu taşıma optimizasyonu üzerinde çalışıyorum. Bunun yanında 'Security Scan' gibi projelerde görüntü işleme ve nesne tanıma teknolojilerini kullanarak güvenliği artırmayı hedefliyorum.
+                <br><br>
+                TEKNOFEST yarışmalarında takım lideri olarak kendi geliştirdiğim projelerde yer alırken, TÜBİTAK 2209-A programından destek alarak çalışmalarımı sürdürüyorum.
+            </p>
+            <button class="show-more-btn">Daha Fazla Gör</button>
+        </div>
+        
+        <div class="sections-container">
+            <section class="section-block">
+                <h2><i class="fas fa-graduation-cap"></i> Eğitim</h2>
+                <div class="education-item">
+                    <h3>Lisans - Bilgisayar Mühendisliği</h3>
+                    <p class="school">Recep Tayyip Erdoğan Üniversitesi, Mimarlık Ve Mühendislik Fakültesi</p>
+                    <p class="date">2021 - 2026</p>
+                </div>
+                <div class="education-item">
+                    <h3>Lise</h3>
+                    <p class="school">Hacisani Konukoglu Anadolu Lisesi</p>
+                    <p class="date">2016 - 2020</p>
+                </div>
+            </section>
+            
+            <section class="section-block">
+                <h2><i class="fas fa-briefcase"></i> Deneyim</h2>
+                <div class="experience-item">
+                    <h3>Bilgisayar Mühendisliği Topluluğu</h3>
+                    <p class="role">Kurucu Başkan</p>
+                    <p class="date">2023</p>
+                    <ul>
+                        <li>Atölye ve seminer organizasyonlarıyla 100+ katılımcıya ulaşıldı.</li>
+                        <li>Teknik içerik üretimi ve topluluk yönetimi sağlandı.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>İnekWiz - Akıllı Çiftlik İzleme</h3>
+                    <p class="role">Takım Üyesi | TÜBİTAK 2209-A</p>
+                    <p class="date">2022 - 2023</p>
+                    <ul>
+                        <li>Gerçek zamanlı veri toplama ve raporlama sistemi geliştirildi.</li>
+                        <li>Python ve IoT teknolojileri ile çiftlik izleme yazılımı hazırlandı.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>EYS - Engelli Yardım Sistemi</h3>
+                    <p class="role">Takım Lideri | TEKNOFEST</p>
+                    <p class="date">2023</p>
+                    <ul>
+                        <li>İşaret dili çevirisi ve yön rehberliği sağlayan mobil uygulama geliştirildi.</li>
+                        <li>Python, Android, Raspberry Pi entegrasyonu yapıldı.</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="section-block">
+                <h2><i class="fas fa-cogs"></i> Yetenekler</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programlama Dilleri</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Web Teknolojileri</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Veri Bilimi & AI</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">LSTM</span>
+                            <span class="skill-tag">BERT</span>
+                            <span class="skill-tag">NLP</span>
+                            <span class="skill-tag">YOLOv8</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Gömülü Sistemler</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Arduino</span>
+                            <span class="skill-tag">Raspberry Pi</span>
+                            <span class="skill-tag">IoT</span>
+                            <span class="skill-tag">ArduPilot</span>
+                            <span class="skill-tag">Jetson Nano</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section-block">
+                <h2><i class="fas fa-certificate"></i> Sertifikalar</h2>
+                <div class="certificate-item">
+                    <h3>Python Eğitimi</h3>
+                    <p class="issuer">Yıldız Teknik Üniversitesi (2024)</p>
+                </div>
+                <div class="certificate-item">
+                    <h3>Algoritma ve Veri Yapıları</h3>
+                    <p class="issuer">BTK Akademi</p>
+                </div>
+            </section>
+            
+            <section class="section-block">
+                <h2><i class="fas fa-language"></i> Yabancı Dil</h2>
+                <div class="language-item">
+                    <h3>İngilizce</h3>
+                    <div class="language-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 75%;"></div>
+                        </div>
+                        <span class="level-text">İyi</span>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
+    
     <footer>
-        <p>&copy;  2024 Ali Emre. Tüm Hakları Saklıdır.</p>
+        <p>&copy; 2024 Ali Emre. Tüm Hakları Saklıdır.</p>
     </footer>
 
-    <script>
-        function toggleGizliYazi() {
-            const gizliYazi = document.querySelector('.gizli-yazi');
-            gizliYazi.classList.toggle('active');
-        }
-    </script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

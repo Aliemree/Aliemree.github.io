@@ -6,6 +6,7 @@
     <title>İletişim - Ali Emre</title>
     <link rel="stylesheet" href="../css/ortak.css">
     <link rel="stylesheet" href="../css/iletisim.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,21 +20,98 @@
     </header>
     
     <div class="container">
-        <h1>İletişim</h1>
-        <p>Bize ulaşmak için aşağıdaki formu doldurun.</p>
-        <form id="contact-form">
-            <label for="name">İsim:</label>
-            <input type="text" id="name" name="name" placeholder="İsminizi girin" required>
+        <h1><i class="fas fa-envelope"></i> İletişim</h1>
+        <p>Sorularınız, işbirliği teklifleri veya projelerim hakkında daha fazla bilgi edinmek için benimle iletişime geçebilirsiniz.</p>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Adres</h3>
+                        <p>Gaziantep / Rize, Türkiye</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Telefon</h3>
+                        <p>+90 507 027 11 69</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>E-posta</h3>
+                        <p>ali.emree.tr@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Sosyal Medya</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" title="Kişisel Web"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+                
+                <div class="education-info">
+                    <h3><i class="fas fa-graduation-cap"></i> Eğitim</h3>
+                    <p><strong>Recep Tayyip Erdoğan Üniversitesi</strong><br>
+                    Bilgisayar Mühendisliği<br>
+                    2021 - 2026</p>
+                </div>
+            </div>
             
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" name="email" placeholder="E-postanızı girin" required>
-            
-            <label for="message">Mesaj:</label>
-            <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
-            
-            <button type="submit" class="submit-btn">Gönder</button>
-        </form>
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> İsim:</label>
+                        <input type="text" id="name" name="name" placeholder="İsminizi girin" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-at"></i> E-posta:</label>
+                        <input type="email" id="email" name="email" placeholder="E-postanızı girin" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-tag"></i> Konu:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Mesajınızın konusu" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Mesaj:</label>
+                        <textarea id="message" name="message" placeholder="Mesajınızı yazın" required></textarea>
+                    </div>
+                    
+                    <div id="form-error" class="error-message"></div>
+                    <div id="form-success" class="success-message"></div>
+                    
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Gönder</button>
+                </form>
+                
+                <div class="current-projects">
+                    <h3><i class="fas fa-tasks"></i> Güncel Projeler</h3>
+                    <ul>
+                        <li><strong>İHA Tasarımı ve Simülasyonları</strong> - TEKNOFEST</li>
+                        <li><strong>Otonom Hedefleme Taret Sistemi</strong> - TEKNOFEST</li>
+                        <li><strong>Toplu Taşıma Yapay Zeka Sistemi</strong> - TÜBİTAK 2209-A</li>
+                        <li><strong>5G Tabanlı Konumlandırma Sistemi</strong> - TEKNOFEST</li>
+                    </ul>
+                    <a href="projelerim.html" class="view-all-link">Tüm projeleri görüntüle <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2024 Ali Emre. Tüm Hakları Saklıdır.</p>
+    </footer>
+    
     <script src="../js/script.js"></script>
 </body>
 </html>
