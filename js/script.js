@@ -74,7 +74,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     projects.forEach(project => {
                         // Use opacity transition for smoother filtering
-                        if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                        const projectCategory = project.getAttribute('data-category');
+                        if (filter === 'all' || (projectCategory && projectCategory.includes(filter))) {
                             project.style.opacity = '0';
                             project.style.transform = 'scale(0.8)';
                             
