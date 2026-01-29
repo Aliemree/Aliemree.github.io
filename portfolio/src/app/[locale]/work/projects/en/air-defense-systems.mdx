@@ -1,0 +1,54 @@
+---
+title: "Air Defense Systems"
+publishedAt: "2025-04-10"
+summary: "Autonomous air defense systems development project for TEKNOFEST."
+images: ["/images/projects/idef_0.png"]
+tags: ["TEKNOFEST", "Defense", "AI"]
+---
+
+## Project Details
+
+Developed an autonomous air defense turret system that combines state-of-the-art computer vision with precision mechanical control. The system can detect, track, and target aerial objects in real-time.
+
+## Key Features
+
+- **Real-Time Object Detection**: Implemented YOLOv8 for fast and accurate detection of aerial targets.
+- **Onboard AI Processing**: Utilized Jetson Nano for edge computing, enabling autonomous operation without external connectivity.
+- **Precision Tracking**: Developed servo-based targeting system with smooth tracking algorithms.
+- **Low Latency**: Optimized the entire pipeline for minimal detection-to-action delay.
+
+## System Architecture
+
+The system consists of three main components:
+
+- **Vision Module**: Camera input processed through YOLOv8 running on Jetson Nano
+- **Tracking Algorithm**: Kalman filter-based prediction for smooth target tracking
+- **Control System**: PID-controlled servo motors for precise turret movement
+
+## Technologies Used
+
+- **YOLOv8** - State-of-the-art object detection model
+- **Jetson Nano** - NVIDIA edge AI computing platform
+- **OpenCV** - Image processing and camera interface
+- **Python** - Primary development language
+- **Arduino** - Servo motor control interface
+
+## Performance
+
+- **Detection rate**: 30+ FPS on Jetson Nano
+- **Tracking accuracy**: Sub-degree precision
+- **Response time**: < 100ms from detection to movement
+
+## Challenges and Solutions
+
+The main challenge was achieving real-time performance on embedded hardware. This was solved through:
+
+- Model optimization using TensorRT
+- Efficient memory management
+- Parallel processing of vision and control tasks
+
+## Achievements
+
+- **Technical Qualification Report**: 100% Completed
+- **Detailed Design Report**: 100% Completed
+- **Competition**: Successfully Completed

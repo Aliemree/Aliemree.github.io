@@ -1,0 +1,50 @@
+---
+title: "AI in Aviation"
+publishedAt: "2025-05-23"
+summary: "AI solutions for optimizing aviation operations."
+images: ["/images/projects/idef_3.jpg"]
+tags: ["TEKNOFEST", "AI", "Aviation"]
+---
+
+## Project Details
+
+Developed a real-time AI-based aerial object detection and tracking system for drone applications, capable of operating in day and night conditions.
+
+## Key Features
+
+- **Real-time object detection using YOLOv8**: Fast and accurate detection of aerial objects
+- **Small object detection enhanced with SAHI**: Improved detection accuracy for distant or small targets
+- **Multi-object tracking with DeepSORT**: Consistent tracking with unique ID assignment
+- **Low-light preprocessing for night scenarios**: Enhanced visibility in challenging lighting conditions
+- **TensorRT-optimized real-time inference**: Maximum performance through GPU optimization
+
+## System Architecture
+
+The system consists of four integrated components:
+
+- **Vision Module**: Drone camera + YOLOv8
+- **Preprocessing**: Low-light enhancement, SAHI slicing
+- **Tracking**: DeepSORT-based ID tracking
+- **Inference**: ONNX/TensorRT optimized runtime
+
+## Technologies Used
+
+- **YOLOv8** - State-of-the-art object detection model
+- **SAHI** - Slicing Aided Hyper Inference for small object detection
+- **DeepSORT** - Multi-object tracking algorithm
+- **TensorRT** - NVIDIA deep learning inference optimizer
+- **OpenCV** - Computer vision library
+- **Python/C++** - Development languages
+- **NVIDIA GPU** - Hardware acceleration platform
+
+## Performance
+
+- **Real-time inference**: 30+ FPS
+- **Detection accuracy**: mAP@0.5 up to 0.75
+- **Tracking stability**: Stable multi-object tracking with no ID switches
+
+## Achievements
+
+- **Preliminary Design Phase**: 100% Completed
+- **Online Competition**: 100% Completed
+- **Competition**: Successfully Completed

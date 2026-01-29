@@ -1,0 +1,50 @@
+---
+title: "Havacılıkta Yapay Zeka"
+publishedAt: "2025-05-23"
+summary: "Havacılık operasyonlarının optimize edilmesi için yapay zeka çözümleri."
+images: ["/images/projects/idef_3.jpg"]
+tags: ["TEKNOFEST", "Yapay Zeka", "Havacılık"]
+---
+
+## Proje Detayları
+
+Gündüz ve gece koşullarında çalışabilen, drone uygulamaları için gerçek zamanlı yapay zeka tabanlı hava nesnesi tespit ve takip sistemi geliştirildi.
+
+## Temel Özellikler
+
+- **YOLOv8 ile gerçek zamanlı nesne tespiti**: Hava nesnelerinin hızlı ve doğru tespiti
+- **SAHI ile geliştirilmiş küçük nesne tespiti**: Uzak veya küçük hedefler için geliştirilmiş tespit doğruluğu
+- **DeepSORT ile çoklu nesne takibi**: Benzersiz kimlik atamasıyla tutarlı takip
+- **Gece senaryoları için düşük ışık ön işleme**: Zorlu aydınlatma koşullarında geliştirilmiş görünürlük
+- **TensorRT optimize edilmiş gerçek zamanlı çıkarım**: GPU optimizasyonu sayesinde maksimum performans
+
+## Sistem Mimarisi
+
+Sistem dört entegre bileşenden oluşur:
+
+- **Görü Modülü**: Drone kamerası + YOLOv8
+- **Ön İşleme**: Düşük ışık iyileştirme, SAHI dilimleme
+- **Takip**: DeepSORT tabanlı kimlik takibi
+- **Çıkarım**: ONNX/TensorRT optimize edilmiş çalıştırma ortamı
+
+## Kullanılan Teknolojiler
+
+- **YOLOv8** - En son nesne algılama modeli
+- **SAHI** - Küçük nesne tespiti için dilimleme destekli hiper çıkarım
+- **DeepSORT** - Çoklu nesne takip algoritması
+- **TensorRT** - NVIDIA derin öğrenme çıkarım optimize edici
+- **OpenCV** - Bilgisayarlı görü kütüphanesi
+- **Python/C++** - Geliştirme dilleri
+- **NVIDIA GPU** - Donanım hızlandırma platformu
+
+## Performans
+
+- **Gerçek zamanlı çıkarım**: 30+ FPS
+- **Tespit doğruluğu**: mAP@0.5 0.75'e kadar
+- **Takip kararlılığı**: Kimlik değişimi olmadan kararlı çoklu nesne takibi
+
+## Başarılar
+
+- **Ön Tasarım Aşaması**: %100 Tamamlandı
+- **Çevrim İçi Yarışma**: %100 Tamamlandı
+- **Yarışma**: Başarıyla Tamamlandı

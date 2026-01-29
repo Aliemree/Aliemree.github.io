@@ -1,0 +1,58 @@
+{
+    "locale": "tr",
+    "nav": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımda",
+        "achievements": "Başarılarım",
+        "work": "Projelerim",
+        "gallery": "Galeri",
+        "contact": "İletişim"
+    },
+    "person": {
+        "role": "Bilgisayar Mühendisliği Öğrencisi"
+    },
+    "newsletter": {
+        "title": "Bültene Abone Olun",
+        "description": "En son proje güncellemeleri ve haberler için bültene katılın"
+    },
+    "home": {
+        "title": "Ali Emre - Bilgisayar Mühendisliği Öğrencisi",
+        "description": "Yapay Zeka, NLP ve Web Teknolojileri alanında Yazılım Geliştirici",
+        "headline": "Ar-Ge Odaklı Yazılım Mühendisliği",
+        "subline": "Recep Tayyip Erdoğan Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisi. Makine öğrenimi, doğal dil işleme ve gömülü sistemler alanlarında TÜBİTAK ve TEKNOFEST destekli Ar-Ge projeleri yürütmekteyim."
+    },
+    "about": {
+        "title": "Hakkımda",
+        "description": "Ali Emre hakkında daha fazla bilgi",
+        "intro": {
+            "title": "Tanıtım",
+            "description": "Gömülü sistemler, yapay zekâ ve yazılım alanlarına ilgi duyan bir 4. sınıf bilgisayar mühendisliği öğrencisiyim. TÜBİTAK ve TEKNOFEST projelerinde birçok takıma liderlik yaparak yenilikçi çözümler geliştirdim. Makine öğrenimi, doğal dil işleme ve otonom sistemler üzerine uygulamalı projeler üretiyor; araştırma ve açık kaynak katkılarıyla teknik ve toplumsal değeri yüksek sistemler geliştirmeyi hedefliyorum."
+        },
+        "technical": {
+            "title": "Teknik Yetenekler"
+        }
+    },
+    "achievements": {
+        "title": "Başarılarım",
+        "description": "Yarışma ödülleri ve proje başarıları"
+    },
+    "work": {
+        "title": "Projelerim",
+        "description": "TÜBİTAK, TEKNOFEST ve kişisel projeler"
+    },
+    "gallery": {
+        "title": "Galeri",
+        "description": "Yolculuğumdan anlar ve proje fotoğrafları"
+    },
+    "contact": {
+        "title": "İletişim",
+        "description": "Sorularınız veya işbirliği teklifleriniz için benimle iletişime geçin."
+    },
+    "common": {
+        "readMore": "Devamını Oku",
+        "viewDetails": "Detayları Görüntüle",
+        "learnMore": "Daha Fazla Bilgi",
+        "getInTouch": "İletişime Geçin",
+        "allRightsReserved": "Tüm Hakları Saklıdır"
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "locale": "en",
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "achievements": "Achievements",
+        "work": "Projects",
+        "gallery": "Gallery",
+        "contact": "Contact"
+    },
+    "person": {
+        "role": "Computer Engineering Student"
+    },
+    "newsletter": {
+        "title": "Subscribe to Newsletter",
+        "description": "Join for the latest project updates and news"
+    },
+    "home": {
+        "title": "Ali Emre - Computer Engineering Student",
+        "description": "Software Developer specializing in AI, NLP, and Web Technologies",
+        "headline": "R&D-Focused Software Engineering",
+        "subline": "Senior Computer Engineering student at Recep Tayyip Erdoğan University. Conducting TÜBİTAK and TEKNOFEST funded R&D projects in machine learning, NLP, and embedded systems."
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Learn more about Ali Emre",
+        "intro": {
+            "title": "Introduction",
+            "description": "I am a 4th-year Computer Engineering student interested in embedded systems, artificial intelligence, and software development. I have led many teams in TÜBİTAK and TEKNOFEST projects, developing innovative solutions. I work on applied projects in machine learning, natural language processing, and autonomous systems; aiming to develop systems with high technical and social value through research and open-source contributions."
+        },
+        "technical": {
+            "title": "Technical Skills"
+        }
+    },
+    "achievements": {
+        "title": "My Achievements",
+        "description": "Competition awards and project achievements"
+    },
+    "work": {
+        "title": "My Projects",
+        "description": "TÜBİTAK, TEKNOFEST, and personal projects"
+    },
+    "gallery": {
+        "title": "Gallery",
+        "description": "Moments from my journey and project photos"
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "Get in touch for questions or collaboration opportunities."
+    },
+    "common": {
+        "readMore": "Read More",
+        "viewDetails": "View Details",
+        "learnMore": "Learn More",
+        "getInTouch": "Get In Touch",
+        "allRightsReserved": "All Rights Reserved"
+    }
+}

@@ -1,0 +1,54 @@
+---
+title: "Hava Savunma Sistemleri"
+publishedAt: "2025-04-10"
+summary: "TEKNOFEST için otonom hava savunma sistemleri geliştirme projesi."
+images: ["/images/projects/idef_0.png"]
+tags: ["TEKNOFEST", "Savunma", "Yapay Zeka"]
+---
+
+## Proje Detayları
+
+Son teknoloji bilgisayarlı görüyü hassas mekanik kontrolle birleştiren otonom bir hava savunma taret sistemi geliştirdik. Sistem, hava hedeflerini gerçek zamanlı olarak tespit edebilir, takip edebilir ve hedef alabilir.
+
+## Temel Özellikler
+
+- **Gerçek Zamanlı Nesne Tespiti**: Hava hedeflerinin hızlı ve doğru tespiti için YOLOv8 uygulandı.
+- **Yerleşik AI İşleme**: Jetson Nano'nun edge computing yeteneklerinden yararlanılarak dış bağlantı olmadan otonom işletim sağlandı.
+- **Hassas Takip**: Servo tabanlı hedefleme sistemi ve yumuşak takip algoritmaları geliştirildi.
+- **Düşük Gecikme**: Tüm işlem hattı tespit ile hareket arasındaki gecikmeyi en aza indirmek için optimize edildi.
+
+## Sistem Mimarisi
+
+Sistem üç ana bileşenden oluşur:
+
+- **Görü Modülü**: Kamera girdisi Jetson Nano üzerinde çalışan YOLOv8 aracılığıyla işlenir
+- **Takip Algoritması**: Sorunsuz hedef takibi için Kalman filtresi tabanlı tahmin
+- **Kontrol Sistemi**: Hassas taret hareketi için PID kontrollü servo motorlar
+
+## Kullanılan Teknolojiler
+
+- **YOLOv8** - En son nesne algılama modeli
+- **Jetson Nano** - NVIDIA edge AI hesaplama platformu
+- **OpenCV** - Görüntü işleme ve kamera ara yüzü
+- **Python** - Birincil geliştirme dili
+- **Arduino** - Servo motor kontrol ara yüzü
+
+## Performans
+
+- **Tespit hızı**: Jetson Nano'da 30+ FPS
+- **Takip doğruluğu**: Alt derece hassasiyeti
+- **Yanıt süresi**: Tespit ile hareket arasında < 100ms
+
+## Zorluklar ve Çözümler
+
+Gömülü donanımda gerçek zamanlı performans elde etmek ana zorluktu. Bu şu yollarla çözüldü:
+
+- TensorRT kullanılarak model optimizasyonu
+- Verimli bellek yönetimi
+- Görü ve kontrol görevlerinin paralel işlenmesi
+
+## Başarılar
+
+- **Teknik Nitelik Raporu**: %100 Tamamlandı
+- **Detaylı Tasarım Raporu**: %100 Tamamlandı
+- **Yarışma**: Başarıyla Tamamlandı
