@@ -26,7 +26,7 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
             setIsAuthenticated(false);
 
             const checkRouteEnabled = () => {
-                if (!pathname) return false;
+                if (!pathname) return true; // Default to true for static export
 
                 if (pathname in routes) {
                     return routes[pathname as keyof typeof routes];
@@ -39,17 +39,18 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
                     }
                 }
 
-                return false;
+                return true; // Default to true for static export
             };
 
             const routeEnabled = checkRouteEnabled();
             setIsRouteEnabled(routeEnabled);
 
+            // Skip API calls for static export - check localStorage instead
             if (protectedRoutes[pathname as keyof typeof protectedRoutes]) {
                 setIsPasswordRequired(true);
-
-                const response = await fetch('/api/check-auth');
-                if (response.ok) {
+                // For static export, skip server-side auth check
+                const storedAuth = typeof window !== 'undefined' && localStorage.getItem('auth');
+                if (storedAuth) {
                     setIsAuthenticated(true);
                 }
             }
@@ -77,42 +78,42 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
 
     if (loading) {
         return (
-        <Flex fillWidth paddingY="128" justifyContent="center">
-            <Spinner />
-        </Flex>
+            <Flex fillWidth paddingY="128" justifyContent="center">
+                <Spinner />
+            </Flex>
         );
     }
 
     if (!isRouteEnabled) {
         return (
-        <Flex fillWidth paddingY="128" justifyContent="center">
-            <Spinner />
-        </Flex>
+            <Flex fillWidth paddingY="128" justifyContent="center">
+                <Spinner />
+            </Flex>
         );
     }
 
     if (isPasswordRequired && !isAuthenticated) {
         return (
-        <Flex
-            fillWidth paddingY="128" maxWidth={24} gap="24"
-            justifyContent="center" direction="column" alignItems="center">
-            <Heading align="center" wrap="balance">
-                This page is password protected
-            </Heading>
-            <Input
-                id="password"
-                type="password"
-                label="Enter password"
-                value={password}
-                onChange={(e) => {
-                    setPassword(e.target.value);
-                    setError(undefined);
-                }}
-                error={error}/>
-            <Button onClick={handlePasswordSubmit} size="l">
-                Submit
-            </Button>
-        </Flex>
+            <Flex
+                fillWidth paddingY="128" maxWidth={24} gap="24"
+                justifyContent="center" direction="column" alignItems="center">
+                <Heading align="center" wrap="balance">
+                    This page is password protected
+                </Heading>
+                <Input
+                    id="password"
+                    type="password"
+                    label="Enter password"
+                    value={password}
+                    onChange={(e) => {
+                        setPassword(e.target.value);
+                        setError(undefined);
+                    }}
+                    error={error} />
+                <Button onClick={handlePasswordSubmit} size="l">
+                    Submit
+                </Button>
+            </Flex>
         );
     }
 
