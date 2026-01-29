@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Ali Emre - Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/tr/">
+    <script>
+        // Get browser language
+        const lang = navigator.language || navigator.userLanguage;
+        const isTurkish = lang.startsWith('tr');
+        
+        // Redirect based on browser language
+        window.location.href = isTurkish ? '/tr/' : '/en/';
+    </script>
+</head>
+<body>
+    <p>Redirecting... / Yönlendiriliyor...</p>
+    <p><a href="/tr/">Türkçe</a> | <a href="/en/">English</a></p>
+</body>
+</html>
