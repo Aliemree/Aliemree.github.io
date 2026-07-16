@@ -2,8 +2,9 @@ import React from 'react';
 
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow } from '@/once-ui/components';
 
-import { baseURL, routes, renderContent } from '@/app/resources';
+import { baseURL, renderContent } from '@/app/resources';
 import { Mailchimp } from '@/components';
+import { Projects } from '@/components/work/Projects';
 import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 
@@ -45,7 +46,7 @@ export default function Home(
 ) {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations();
-	const { home, about, person, newsletter } = renderContent(t);
+	const { home, person, newsletter } = renderContent(t);
 	return (
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
@@ -109,7 +110,7 @@ export default function Home(
 								WebkitTextFillColor: 'transparent',
 								backgroundClip: 'text'
 							}}>
-							{person.name}
+							{home.headline}
 						</Heading>
 					</RevealFx>
 					<RevealFx
@@ -133,7 +134,7 @@ export default function Home(
 							</Text>
 						</Flex>
 					</RevealFx>
-					{/* Current Status Highlights */}
+					{/* Availability */}
 					<RevealFx
 						translateY="4" delay={0.18} fillWidth justifyContent="center" paddingBottom="l">
 						<Flex gap="8" wrap justifyContent="center" alignItems="center">
@@ -144,39 +145,15 @@ export default function Home(
 								alignItems="center"
 								gap="8"
 								style={{
-									background: 'rgba(239, 68, 68, 0.12)',
-									border: '1px solid rgba(239, 68, 68, 0.3)',
+									background: 'rgba(16, 185, 129, 0.12)',
+									border: '1px solid rgba(16, 185, 129, 0.3)',
 								}}>
-								<Text style={{ fontSize: '10px' }}>🎓</Text>
-								<Text variant="label-default-s" style={{ color: 'rgb(239, 68, 68)', fontSize: '11px' }}>
-									{locale === 'tr' ? 'TUSAŞ Destekli Bitirme Tezi' : 'TUSAŞ Graduation Project'}
-								</Text>
-							</Flex>
-							<Flex
-								padding="4"
-								paddingX="12"
-								radius="full"
-								alignItems="center"
-								gap="8"
-								style={{
-									background: 'rgba(59, 130, 246, 0.12)',
-									border: '1px solid rgba(59, 130, 246, 0.3)',
-								}}>
-								<Text style={{ fontSize: '10px' }}>📱</Text>
-								<Text variant="label-default-s" style={{ color: 'rgb(59, 130, 246)', fontSize: '11px' }}>
-									{locale === 'tr' ? 'Turkcell USİD Stajyeri' : 'Turkcell USİD Intern'}
+								<Text style={{ color: 'rgb(16, 185, 129)', fontSize: '10px' }}>●</Text>
+								<Text variant="label-default-s" style={{ color: 'rgb(16, 185, 129)', fontSize: '11px' }}>
+									{home.availability}
 								</Text>
 							</Flex>
 						</Flex>
-					</RevealFx>
-					<RevealFx
-						translateY="4" delay={0.22} fillWidth justifyContent="center" paddingBottom="m">
-						<Heading
-							wrap="balance"
-							variant="display-strong-l"
-							style={{ textAlign: 'center' }}>
-							{home.headline}
-						</Heading>
 					</RevealFx>
 					<RevealFx
 						translateY="8" delay={0.25} fillWidth justifyContent="center" paddingBottom="l">
@@ -199,32 +176,37 @@ export default function Home(
 					<RevealFx translateY="12" delay={0.35}>
 						<Flex gap="12" wrap justifyContent="center">
 							<Button
-								id="about"
-								data-border="rounded"
-								href={`/${locale}/about`}
-								variant="primary"
-								size="m">
-								<Flex gap="8" alignItems="center">
-									{typeof about.title === 'object' ? about.title[locale] || about.title.en : t("about.title")}
-									<Arrow trigger="#about" />
-								</Flex>
-							</Button>
-							<Button
 								id="projects"
 								data-border="rounded"
 								href={`/${locale}/work`}
-								variant="secondary"
+								variant="primary"
 								size="m">
 								<Flex gap="8" alignItems="center">
-									{locale === 'tr' ? 'Projelerim' : 'My Projects'}
+									{locale === 'tr' ? 'Projeleri Gör' : 'View Projects'}
 									<Arrow trigger="#projects" />
 								</Flex>
+							</Button>
+							<Button
+								data-border="rounded"
+								href="https://github.com/Aliemree"
+								variant="secondary"
+								size="m">
+								GitHub
+							</Button>
+							<Button
+								data-border="rounded"
+								href={`/${locale}/contact`}
+								variant="tertiary"
+								size="m">
+								{locale === 'tr' ? 'İletişime Geç' : 'Contact Me'}
 							</Button>
 						</Flex>
 					</RevealFx>
 				</Flex>
 
 			</Flex>
+
+			<Projects range={[1, 3]} locale={locale} />
 
 			{newsletter.display &&
 				<Mailchimp newsletter={newsletter} />

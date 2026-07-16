@@ -4,7 +4,7 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role: { en: 'Computer Engineering Student', tr: 'Bilgisayar Mühendisliği Öğrencisi' },
+    role: { en: 'Computer Engineering Graduate | Backend & AI Developer', tr: 'Bilgisayar Mühendisliği Mezunu | Backend ve Yapay Zekâ Geliştiricisi' },
     avatar: '/images/profile.webp',
     location: 'Europe/Istanbul',
     languages: ['Turkish', 'English']
@@ -25,7 +25,12 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/ali-emre/',
+        link: 'https://www.linkedin.com/in/ali-emre-964723270/',
+    },
+    {
+        name: 'Portfolio',
+        icon: 'globe',
+        link: 'https://aliemree.github.io/',
     },
     {
         name: 'Email',
@@ -36,10 +41,11 @@ const social = [
 
 const home = {
     label: { en: 'Home', tr: 'Ana Sayfa' },
-    title: { en: 'Ali Emre - Computer Engineering Student', tr: 'Ali Emre - Bilgisayar Mühendisliği Öğrencisi' },
-    description: { en: 'Portfolio of Ali Emre - Software Developer specializing in AI, NLP, and Web Technologies', tr: 'Ali Emre Portföyü - Yapay Zeka, NLP ve Web Teknolojileri alanında Yazılım Geliştirici' },
-    headline: <>Shaping Technology with Innovation</>,
-    subline: <>Computer Engineering Student at RTE University.<br />TÜBİTAK and TEKNOFEST project leader, developing solutions in AI and embedded systems.</>
+    title: { en: 'Ali Emre | Backend & AI Developer', tr: 'Ali Emre | Backend ve Yapay Zekâ Geliştiricisi' },
+    description: { en: 'I build backend systems, AI-powered applications, IoT solutions and autonomous systems.', tr: 'Backend sistemleri, yapay zekâ destekli uygulamalar, IoT çözümleri ve otonom sistemler geliştiriyorum.' },
+    headline: { en: "Hi, I'm Ali Emre.", tr: 'Merhaba, ben Ali Emre.' },
+    subline: { en: 'I build backend systems, AI-powered applications, IoT solutions and autonomous systems.', tr: 'Backend sistemleri, yapay zekâ destekli uygulamalar, IoT çözümleri ve otonom sistemler geliştiriyorum.' },
+    availability: { en: 'Open to Software Engineering & AI Opportunities', tr: 'Yazılım Mühendisliği ve Yapay Zekâ Fırsatlarına Açık' }
 }
 
 const about = {
@@ -59,40 +65,62 @@ const about = {
     intro: {
         display: true,
         title: { en: 'Introduction', tr: 'Tanıtım' },
-        description: <>I am a 4th-year Computer Engineering student interested in embedded systems, artificial intelligence, and software development. I have led many teams in TÜBİTAK and TEKNOFEST projects, developing innovative solutions.<br /><br />I work on applied projects in machine learning, natural language processing, and autonomous systems; aiming to develop systems with high technical and social value through research and open-source contributions.</>
+        description: {
+            en: 'I am a Computer Engineering graduate focused on backend systems, AI-powered applications, IoT and autonomous systems. I enjoy transforming complex engineering problems into maintainable and practical software solutions.',
+            tr: 'Bilgisayar mühendisliği mezunuyum. Backend sistemleri, yapay zekâ destekli uygulamalar, IoT ve otonom sistemler üzerine çalışıyorum. Karmaşık mühendislik problemlerini anlaşılır, sürdürülebilir ve uygulanabilir yazılım çözümlerine dönüştürmeye odaklanıyorum.'
+        }
     },
     work: {
-        display: true,
+        display: false,
         title: { en: 'Experience', tr: 'Deneyim' },
         experiences: [
             {
+                company: 'Turkcell USİD',
+                timeframe: '02.2026 - 2026',
+                role: { en: 'Backend & AI Development Intern', tr: 'Backend ve Yapay Zekâ Geliştirme Stajyeri' },
+                achievements: [
+                    { en: 'Developed PN_AI, an independent VoIP log analysis platform for a real troubleshooting problem', tr: 'Gerçek bir sorun giderme problemi için bağımsız PN_AI VoIP log analiz platformunu geliştirdim' },
+                    { en: 'Built deterministic event extraction, root-cause classification, evidence and timeline workflows', tr: 'Deterministik olay çıkarımı, kök neden sınıflandırma, kanıt ve zaman çizelgesi akışları geliştirdim' }
+                ],
+                images: []
+            },
+            {
+                company: { en: 'Soft2AI / TUSAŞ Supported Graduation Project', tr: 'Soft2AI / TUSAŞ Destekli Bitirme Projesi' },
+                timeframe: '09.2025 - 2026',
+                role: { en: 'R&D Developer', tr: 'AR-GE Geliştiricisi' },
+                achievements: [
+                    { en: 'Researched network anomaly detection with LSTM, Isolation Forest and Autoencoder models', tr: 'LSTM, Isolation Forest ve Autoencoder modelleriyle ağ anomalisi tespiti üzerine çalıştım' },
+                    { en: 'Contributed to a web-based analysis and monitoring workflow', tr: 'Web tabanlı analiz ve izleme akışına katkı sağladım' }
+                ],
+                images: []
+            },
+            {
+                company: 'Erpen Plastik A.Ş.',
+                timeframe: '06.2025 - 09.2025',
+                role: { en: 'Intern Engineer', tr: 'Stajyer Mühendis' },
+                achievements: [
+                    { en: 'Developed a YOLOv8 and OCR based license plate recognition prototype', tr: 'YOLOv8 ve OCR tabanlı plaka tanıma prototipi geliştirdim' },
+                    { en: 'Worked on full-stack services with Node.js, Prisma, PostgreSQL and React', tr: 'Node.js, Prisma, PostgreSQL ve React ile full-stack servisler üzerinde çalıştım' }
+                ],
+                images: []
+            },
+            {
                 company: 'AI2X Software Team',
-                timeframe: '2024 - Present',
+                timeframe: { en: '2024 - Present', tr: '2024 - Devam' },
                 role: { en: 'Software Developer', tr: 'Yazılım Geliştirici' },
                 achievements: [
-                    <>Led web technologies, machine learning, and NLP projects</>,
-                    <>Developed socially beneficial software within TÜBİTAK and TEKNOFEST frameworks</>,
-                    <>Contributed to 5G Positioning, UAV, and Air Defense projects</>
+                    { en: 'Contributed to 5G positioning, UAV and software projects', tr: '5G konumlandırma, İHA ve yazılım projelerine katkı sağladım' },
+                    { en: 'Worked across backend, machine learning and embedded-system integration', tr: 'Backend, makine öğrenimi ve gömülü sistem entegrasyonu alanlarında çalıştım' }
                 ],
                 images: []
             },
             {
-                company: { en: 'Computer Engineering Community', tr: 'Bilgisayar Mühendisliği Topluluğu' },
-                timeframe: '2023',
+                company: { en: 'Computer Engineering Community — RTEÜ', tr: 'Bilgisayar Mühendisliği Topluluğu — RTEÜ' },
+                timeframe: '10.2023 - 10.2024',
                 role: { en: 'Founding President', tr: 'Kurucu Başkan' },
                 achievements: [
-                    <>Reached 100+ participants through workshops and seminars</>,
-                    <>Provided technical content creation and community management</>
-                ],
-                images: []
-            },
-            {
-                company: 'İnekWiz - Smart Farm Monitoring',
-                timeframe: '2022 - 2023',
-                role: { en: 'Team Member | TÜBİTAK 2209-A', tr: 'Takım Üyesi | TÜBİTAK 2209-A' },
-                achievements: [
-                    <>Developed real-time data collection and reporting system</>,
-                    <>Created farm monitoring software with Python and IoT technologies</>
+                    { en: 'Founded and led a community focused on software, AI and project development', tr: 'Yazılım, yapay zekâ ve proje geliştirme odaklı topluluğu kurup yönettim' },
+                    { en: 'Organized technical seminars and workshops', tr: 'Teknik seminerler ve atölyeler düzenledim' }
                 ],
                 images: []
             }
@@ -117,23 +145,23 @@ const about = {
         title: { en: 'Technical Skills', tr: 'Teknik Yetenekler' },
         skills: [
             {
-                title: { en: 'Programming Languages', tr: 'Programlama Dilleri' },
-                description: <>Python, JavaScript, C++, Java - proficient in multiple paradigms and frameworks.</>,
+                title: { en: 'Backend', tr: 'Backend' },
+                description: { en: 'Python, FastAPI, Java, Spring Boot, REST APIs, PostgreSQL, Redis', tr: 'Python, FastAPI, Java, Spring Boot, REST API’leri, PostgreSQL, Redis' },
                 images: []
             },
             {
-                title: { en: 'AI & Data Science', tr: 'Yapay Zeka & Veri Bilimi' },
-                description: <>TensorFlow, LSTM, BERT, NLP, YOLOv8 - machine learning and deep learning applications.</>,
+                title: { en: 'Frontend', tr: 'Frontend' },
+                description: { en: 'Next.js, React, TypeScript, Tailwind CSS', tr: 'Next.js, React, TypeScript, Tailwind CSS' },
                 images: []
             },
             {
-                title: { en: 'Web Technologies', tr: 'Web Teknolojileri' },
-                description: <>React, Node.js, HTML/CSS, Next.js - full-stack web development.</>,
+                title: { en: 'AI & Data', tr: 'Yapay Zekâ ve Veri' },
+                description: { en: 'PyTorch, scikit-learn, Computer Vision, NLP, Edge Impulse', tr: 'PyTorch, scikit-learn, Bilgisayarlı Görü, NLP, Edge Impulse' },
                 images: []
             },
             {
-                title: { en: 'Embedded Systems', tr: 'Gömülü Sistemler' },
-                description: <>Arduino, Raspberry Pi, IoT, ArduPilot, Jetson Nano - hardware-software integration.</>,
+                title: { en: 'DevOps & Systems', tr: 'DevOps ve Sistemler' },
+                description: { en: 'Docker, Linux, GitHub Actions, Raspberry Pi, ESP32, ROS2, MAVLink', tr: 'Docker, Linux, GitHub Actions, Raspberry Pi, ESP32, ROS2, MAVLink' },
                 images: []
             }
         ]
@@ -141,9 +169,9 @@ const about = {
 }
 
 const work = {
-    label: { en: 'Projects', tr: 'Projelerim' },
-    title: { en: 'My Projects', tr: 'Projelerim' },
-    description: { en: 'TÜBİTAK, TEKNOFEST, and personal projects', tr: 'TÜBİTAK, TEKNOFEST ve kişisel projeler' }
+    label: { en: 'Projects', tr: 'Projeler' },
+    title: { en: 'Projects', tr: 'Projeler' },
+    description: { en: 'Selected backend, AI, security and embedded-system projects', tr: 'Seçili backend, yapay zekâ, güvenlik ve gömülü sistem projeleri' }
 }
 
 const gallery = {
@@ -258,9 +286,48 @@ const team = {
 // Projects data
 const projects = {
     label: { en: 'Projects', tr: 'Projeler' },
-    title: { en: 'My Projects', tr: 'Projelerim' },
-    description: { en: 'TÜBİTAK, TEKNOFEST, and personal projects in AI, embedded systems, and web development', tr: 'Yapay zeka, gömülü sistemler ve web geliştirme alanlarında TÜBİTAK, TEKNOFEST ve kişisel projeler' },
+    title: { en: 'Projects', tr: 'Projeler' },
+    description: { en: 'Selected backend, AI, security and embedded-system projects', tr: 'Seçili backend, yapay zekâ, güvenlik ve gömülü sistem projeleri' },
     items: [
+        {
+            id: 'pn-ai',
+            icon: 'document',
+            badges: [{ en: 'Backend & AI', tr: 'Backend ve Yapay Zekâ' }],
+            title: { en: 'PN_AI — VoIP Log Analysis Platform', tr: 'PN_AI — VoIP Log Analiz Platformu' },
+            description: { en: 'Correlates fragmented Android and iOS VoIP events and produces deterministic root-cause classifications, evidence and timelines.', tr: 'Dağınık Android ve iOS VoIP olaylarını ilişkilendirerek deterministik kök neden sınıflandırmaları, kanıtlar ve zaman çizelgeleri üretir.' },
+            year: '2026',
+            status: { en: 'Completed internship project', tr: 'Tamamlanmış staj projesi' },
+            tags: ['Python', 'FastAPI', 'Next.js', 'PostgreSQL', 'Docker'],
+            github: 'https://github.com/Aliemree/tcell_pn_analyzer',
+            demo: '',
+            images: []
+        },
+        {
+            id: 'classical-cipher-studio',
+            icon: 'shield',
+            badges: [{ en: 'Network Security', tr: 'Ağ Güvenliği' }],
+            title: { en: 'Classical Cipher Studio', tr: 'Classical Cipher Studio' },
+            description: { en: 'Makes eight classical cipher algorithms inspectable through parallel C# and TypeScript implementations and step-by-step visualization.', tr: 'Sekiz klasik şifreleme algoritmasını paralel C# ve TypeScript uygulamaları ve adım adım görselleştirme ile incelenebilir hâle getirir.' },
+            year: '2025',
+            status: { en: 'Available', tr: 'Yayında' },
+            tags: ['C#', '.NET', 'Next.js', 'TypeScript', 'xUnit'],
+            github: 'https://github.com/Aliemree/network_security',
+            demo: 'https://network-security-phi.vercel.app/',
+            images: []
+        },
+        {
+            id: 'ids-dashboard',
+            icon: 'signal',
+            badges: [{ en: 'AI Proof of Concept', tr: 'Yapay Zekâ Kavram Kanıtı' }],
+            title: { en: 'IDS Dashboard', tr: 'IDS Dashboard' },
+            description: { en: 'Demonstrates Isolation Forest inference, SQLite event history and WebSocket updates in an honest anomaly-monitoring proof of concept.', tr: 'Isolation Forest çıkarımı, SQLite olay geçmişi ve WebSocket güncellemelerini dürüst bir anomali izleme kavram kanıtında gösterir.' },
+            year: '2026',
+            status: { en: 'Proof of concept', tr: 'Kavram kanıtı' },
+            tags: ['Python', 'FastAPI', 'scikit-learn', 'Next.js', 'WebSocket'],
+            github: 'https://github.com/Aliemree/ids-dashboard',
+            demo: '',
+            images: []
+        },
         {
             id: 'iha-design',
             icon: 'rocket',

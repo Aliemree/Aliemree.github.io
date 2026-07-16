@@ -19,6 +19,8 @@ interface ProjectItemProps {
     year: string;
     status: string;
     tags: string[];
+    github?: string;
+    demo?: string;
     locale: string;
 }
 
@@ -31,13 +33,16 @@ function ProjectItem({
     year,
     status,
     tags,
+    github,
+    demo,
     locale
 }: ProjectItemProps) {
     return (
-        <SmartLink
-            href={`/${locale}/work/${id}`}
-            style={{ textDecoration: 'none', width: '100%' }}
-        >
+        <Flex direction="column" gap="8" fillWidth>
+            <SmartLink
+                href={`/${locale}/work/${id}`}
+                style={{ textDecoration: 'none', width: '100%' }}
+            >
             <Flex
                 fillWidth
                 padding="24"
@@ -181,7 +186,29 @@ function ProjectItem({
                     <Icon name="arrowRight" size="m" onBackground="neutral-weak" />
                 </Flex>
             </Flex>
-        </SmartLink>
+            </SmartLink>
+            <Flex gap="16" wrap paddingX="8" alignItems="center">
+                {tags.slice(0, 5).map((tag) => (
+                    <Text key={tag} variant="label-default-s" onBackground="neutral-weak">
+                        {tag}
+                    </Text>
+                ))}
+                <Flex flex={1} />
+                {github && (
+                    <SmartLink href={github} suffixIcon="arrowUpRightFromSquare">
+                        GitHub
+                    </SmartLink>
+                )}
+                {demo && (
+                    <SmartLink href={demo} suffixIcon="arrowUpRightFromSquare">
+                        Demo
+                    </SmartLink>
+                )}
+                <SmartLink href={`/${locale}/work/${id}`} suffixIcon="arrowRight">
+                    {locale === 'tr' ? 'Detay' : 'Details'}
+                </SmartLink>
+            </Flex>
+        </Flex>
     );
 }
 
@@ -246,6 +273,8 @@ export function Projects({ range, locale }: ProjectsProps) {
                             year={project.year}
                             status={(project.status as any)[currentLocale]}
                             tags={project.tags}
+                            github={(project as any).github}
+                            demo={(project as any).demo}
                             locale={currentLocale}
                         />
                     );

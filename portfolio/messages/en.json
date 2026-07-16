@@ -2,6 +2,7 @@
     "locale": "en",
     "nav": {
         "home": "Home",
+        "experience": "Experience",
         "about": "About",
         "achievements": "Achievements",
         "work": "Projects",
@@ -9,24 +10,25 @@
         "contact": "Contact"
     },
     "person": {
-        "role": "Computer Engineering Student"
+        "role": "Computer Engineering Graduate | Backend & AI Developer"
     },
     "newsletter": {
         "title": "Subscribe to Newsletter",
         "description": "Join for the latest project updates and news"
     },
     "home": {
-        "title": "Ali Emre - Computer Engineering Student",
-        "description": "Software Developer specializing in AI, NLP, and Web Technologies",
-        "headline": "R&D-Focused Software Engineering",
-        "subline": "Senior Computer Engineering student at Recep Tayyip Erdoğan University. Conducting TÜBİTAK and TEKNOFEST funded R&D projects in machine learning, NLP, and embedded systems."
+        "title": "Ali Emre | Backend & AI Developer",
+        "description": "I build backend systems, AI-powered applications, IoT solutions and autonomous systems.",
+        "headline": "Hi, I'm Ali Emre.",
+        "subline": "I build backend systems, AI-powered applications, IoT solutions and autonomous systems.",
+        "availability": "Open to Software Engineering & AI Opportunities"
     },
     "about": {
         "title": "About Me",
         "description": "Learn more about Ali Emre",
         "intro": {
             "title": "Introduction",
-            "description": "I am a 4th-year Computer Engineering student interested in embedded systems, artificial intelligence, and software development. I have led many teams in TÜBİTAK and TEKNOFEST projects, developing innovative solutions. I work on applied projects in machine learning, natural language processing, and autonomous systems; aiming to develop systems with high technical and social value through research and open-source contributions."
+            "description": "I am a Computer Engineering graduate focused on backend systems, AI-powered applications, IoT and autonomous systems. I enjoy transforming complex engineering problems into maintainable and practical software solutions."
         },
         "technical": {
             "title": "Technical Skills"
@@ -37,8 +39,8 @@
         "description": "Competition awards and project achievements"
     },
     "work": {
-        "title": "My Projects",
-        "description": "TÜBİTAK, TEKNOFEST, and personal projects"
+        "title": "Projects",
+        "description": "Selected backend, AI, security and embedded-system projects"
     },
     "gallery": {
         "title": "Gallery",

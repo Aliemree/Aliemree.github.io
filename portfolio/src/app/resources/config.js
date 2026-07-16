@@ -12,6 +12,7 @@ const i18nOptions = {
 const routes = {
     '/': true,
     '/about': true,
+    '/experience': true,
     '/achievements': true,
     '/work': true,
     '/presentations': false,    // Disabled for personal portfolio

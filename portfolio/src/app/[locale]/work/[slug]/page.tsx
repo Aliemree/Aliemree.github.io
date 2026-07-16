@@ -161,6 +161,26 @@ export default async function Project({ params }: WorkParams) {
 						})}
 					</Flex>
 				)}
+				<Flex gap="12" wrap>
+					{(project as any).github && (
+						<Button
+							href={(project as any).github}
+							variant="secondary"
+							size="s"
+							prefixIcon="github">
+							GitHub
+						</Button>
+					)}
+					{(project as any).demo && (
+						<Button
+							href={(project as any).demo}
+							variant="secondary"
+							size="s"
+							prefixIcon="openLink">
+							Demo
+						</Button>
+					)}
+				</Flex>
 			</Flex>
 
 			{/* Description - Simplified Card */}

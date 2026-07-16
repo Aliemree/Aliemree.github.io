@@ -1,61 +1,40 @@
-# Ali Emre - Personal Portfolio
+# Ali Emre — Portfolio
 
-Modern portfolio website built with **Next.js 14**, **React**, and **Once UI**.
+Multilingual portfolio for Ali Emre, a Computer Engineering graduate and Backend & AI Developer.
 
-🌐 **Live Site**: [https://aliemree.github.io](https://aliemree.github.io)
+**Live site:** [https://aliemree.github.io/](https://aliemree.github.io/)
 
-## Features
+## Positioning
 
-- 🌍 **Multilingual** - Turkish and English support (i18n)
-- 🎨 **Modern Design** - Dark theme with glassmorphism effects
-- 📱 **Responsive** - Mobile-first design
-- ⚡ **Fast** - Static export for GitHub Pages
+The site focuses on backend systems, AI-powered applications, IoT solutions and autonomous systems. Featured projects are PN_AI, Classical Cipher Studio and IDS Dashboard.
 
-## Pages
+## Technology Stack
 
-| Page | Description |
-|------|-------------|
-| **Home** | Introduction and current status badges |
-| **About** | Experience, education, and technical skills |
-| **Achievements** | Competition awards and project achievements |
-| **Projects** | TÜBİTAK, TEKNOFEST, and personal projects |
-| **Gallery** | Team and project photos |
-| **Contact** | Contact information |
+- Next.js 14 and React 18
+- Once UI and Sass
+- next-intl with English and Turkish routes
+- static export deployed through GitHub Pages
 
-## Tech Stack
-
-- **Framework**: Next.js 14 (React)
-- **UI Library**: Once UI
-- **Styling**: SCSS + CSS Modules
-- **i18n**: next-intl
-- **Deployment**: GitHub Pages (Static Export)
-
-## Projects Featured
-
-- 🛩️ UAV Anomaly Detection (IDEF 2025 / TUSAŞ)
-- 📡 5G Positioning System (TEKNOFEST - 4th Place)
-- 🤖 NLP Projects (Açıkhack 2024 Finalist)
-- 🚌 Public Transport AI System (TÜBİTAK 2209-A)
-- 🐄 İnekWiz Smart Farm Monitoring (TÜBİTAK)
-
-## Development
+## Local Development
 
 ```bash
 cd portfolio
-npm install
+npm ci
 npm run dev
 ```
 
-## Build & Deploy
-
-Automatically deployed via GitHub Actions on push to `main` branch.
+## Validation
 
 ```bash
-npm run build  # Creates static export in /out
+cd portfolio
+npm run lint
+npm run build
 ```
+
+`npm run build` creates the static export in `portfolio/out`. GitHub Actions deploys that directory from the `master` branch.
 
 ## Contact
 
-📧 **Email**: ali.emree.tr@gmail.com  
-💼 **LinkedIn**: [ali-emre](https://www.linkedin.com/in/ali-emre/)  
-🐙 **GitHub**: [Aliemree](https://github.com/Aliemree)
+- [GitHub](https://github.com/Aliemree)
+- [LinkedIn](https://www.linkedin.com/in/ali-emre-964723270/)
+- [Email](mailto:ali.emree.tr@gmail.com)
