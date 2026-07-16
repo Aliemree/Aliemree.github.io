@@ -1,8 +1,9 @@
 'use client';
 
 import { Flex, Text, Heading, Button, Icon } from '@/once-ui/components';
-import { baseURL } from '@/app/resources';
+import { baseURL, renderContent } from '@/app/resources';
 import { useParams } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 
 interface ContactCardProps {
     icon: string;
@@ -114,26 +115,10 @@ function SocialButton({ name, icon, link }: { name: string; icon: string; link: 
     );
 }
 
-const personalSocial = [
-    {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/Aliemree',
-    },
-    {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/in/ali-emre/',
-    },
-    {
-        name: 'Email',
-        icon: 'email',
-        link: 'mailto:ali.emree.tr@gmail.com',
-    },
-];
-
 export default function ContactPage() {
     const params = useParams();
+    const t = useTranslations();
+    const { social } = renderContent(t);
     const locale = (params?.locale as string) || 'en';
     const isTR = locale === 'tr';
 
@@ -223,7 +208,7 @@ export default function ContactPage() {
                 </Flex>
 
                 <Flex gap="16" wrap justifyContent="center">
-                    {personalSocial.map((item) => (
+                    {social.map((item) => (
                         <SocialButton
                             key={item.name}
                             name={item.name}

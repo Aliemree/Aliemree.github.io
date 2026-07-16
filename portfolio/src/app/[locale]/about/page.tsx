@@ -96,7 +96,7 @@ export default function About(
                             .map((item) => item.link),
                         worksFor: {
                             '@type': 'Organization',
-                            name: about.work?.experiences?.[0]?.company || 'AI2X Software'
+                            name: 'AI2X Software Team'
                         },
                     }),
                 }}
@@ -340,7 +340,7 @@ export default function About(
                                         <Text
                                             variant="body-default-m"
                                             onBackground="neutral-weak">
-                                            {skill.description}
+                                            {getLocalized(skill.description)}
                                         </Text>
                                         {skill.images && skill.images.length > 0 && (
                                             <Flex

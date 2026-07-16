@@ -68,17 +68,14 @@ export const Header = () => {
     }
 
     const t = useTranslations();
-    const { person, home, about, work, gallery, team } = renderContent(t);
+    const { person, home, about, work } = renderContent(t);
 
     // Navigation items with labels
     const navItems = [
         { path: '/', icon: 'home', content: home.label, enabled: routes['/'] },
-        { path: '/about', icon: 'globe', content: about.label, enabled: routes['/about'] },
-        { path: '/achievements', icon: 'trophy', content: { en: 'Achievements', tr: 'Başarılarım' }, enabled: routes['/achievements'] },
         { path: '/work', icon: 'grid', content: work.label, enabled: routes['/work'] },
-        { path: '/presentations', icon: 'presentation', content: { en: 'Presentations', tr: 'Sunumlar' }, enabled: routes['/presentations'] },
-        { path: '/team', icon: 'users', content: team?.label || { en: 'Team', tr: 'Ekip' }, enabled: routes['/team'] },
-        { path: '/gallery', icon: 'gallery', content: gallery.label, enabled: routes['/gallery'] },
+        { path: '/experience', icon: 'book', content: { en: 'Experience', tr: 'Deneyim' }, enabled: routes['/experience'] },
+        { path: '/about', icon: 'globe', content: about.label, enabled: routes['/about'] },
         { path: '/contact', icon: 'email', content: { en: 'Contact', tr: 'İletişim' }, enabled: routes['/contact'] },
     ];
 

@@ -2,6 +2,7 @@
     "locale": "tr",
     "nav": {
         "home": "Ana Sayfa",
+        "experience": "Deneyim",
         "about": "Hakkımda",
         "achievements": "Başarılarım",
         "work": "Projelerim",
@@ -9,24 +10,25 @@
         "contact": "İletişim"
     },
     "person": {
-        "role": "Bilgisayar Mühendisliği Öğrencisi"
+        "role": "Bilgisayar Mühendisliği Mezunu | Backend ve Yapay Zekâ Geliştiricisi"
     },
     "newsletter": {
         "title": "Bültene Abone Olun",
         "description": "En son proje güncellemeleri ve haberler için bültene katılın"
     },
     "home": {
-        "title": "Ali Emre - Bilgisayar Mühendisliği Öğrencisi",
-        "description": "Yapay Zeka, NLP ve Web Teknolojileri alanında Yazılım Geliştirici",
-        "headline": "Ar-Ge Odaklı Yazılım Mühendisliği",
-        "subline": "Recep Tayyip Erdoğan Üniversitesi Bilgisayar Mühendisliği 4. sınıf öğrencisi. Makine öğrenimi, doğal dil işleme ve gömülü sistemler alanlarında TÜBİTAK ve TEKNOFEST destekli Ar-Ge projeleri yürütmekteyim."
+        "title": "Ali Emre | Backend ve Yapay Zekâ Geliştiricisi",
+        "description": "Backend sistemleri, yapay zekâ destekli uygulamalar, IoT çözümleri ve otonom sistemler geliştiriyorum.",
+        "headline": "Merhaba, ben Ali Emre.",
+        "subline": "Backend sistemleri, yapay zekâ destekli uygulamalar, IoT çözümleri ve otonom sistemler geliştiriyorum.",
+        "availability": "Yazılım Mühendisliği ve Yapay Zekâ Fırsatlarına Açık"
     },
     "about": {
         "title": "Hakkımda",
         "description": "Ali Emre hakkında daha fazla bilgi",
         "intro": {
             "title": "Tanıtım",
-            "description": "Gömülü sistemler, yapay zekâ ve yazılım alanlarına ilgi duyan bir 4. sınıf bilgisayar mühendisliği öğrencisiyim. TÜBİTAK ve TEKNOFEST projelerinde birçok takıma liderlik yaparak yenilikçi çözümler geliştirdim. Makine öğrenimi, doğal dil işleme ve otonom sistemler üzerine uygulamalı projeler üretiyor; araştırma ve açık kaynak katkılarıyla teknik ve toplumsal değeri yüksek sistemler geliştirmeyi hedefliyorum."
+            "description": "Bilgisayar mühendisliği mezunuyum. Backend sistemleri, yapay zekâ destekli uygulamalar, IoT ve otonom sistemler üzerine çalışıyorum. Karmaşık mühendislik problemlerini anlaşılır, sürdürülebilir ve uygulanabilir yazılım çözümlerine dönüştürmeye odaklanıyorum."
         },
         "technical": {
             "title": "Teknik Yetenekler"
@@ -37,8 +39,8 @@
         "description": "Yarışma ödülleri ve proje başarıları"
     },
     "work": {
-        "title": "Projelerim",
-        "description": "TÜBİTAK, TEKNOFEST ve kişisel projeler"
+        "title": "Projeler",
+        "description": "Seçili backend, yapay zekâ, güvenlik ve gömülü sistem projeleri"
     },
     "gallery": {
         "title": "Galeri",
